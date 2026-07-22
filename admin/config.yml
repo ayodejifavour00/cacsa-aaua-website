@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "devotionals"
+    label: "Devotionals"
+    files:
+      - name: "devotionals"
+        label: "Devotionals List"
+        file: "content/devotionals.json"
+        fields:
+          - { label: "Devotionals", name: "devotionals", widget: "list", fields: [
+              { label: "Date", name: "date", widget: "string" },
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Body", name: "body", widget: "text" }
+            ]}
+
+  - name: "sermons"
+    label: "Sermons"
+    files:
+      - name: "sermons"
+        label: "Sermons List"
+        file: "content/sermons.json"
+        fields:
+          - { label: "Sermons", name: "sermons", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "string" },
+              { label: "Tag", name: "tag", widget: "string" }
+            ]}
+
+  - name: "events"
+    label: "Events"
+    files:
+      - name: "events"
+        label: "Events List"
+        file: "content/events.json"
+        fields:
+          - { label: "Events", name: "events", widget: "list", fields: [
+              { label: "Day", name: "day", widget: "string" },
+              { label: "Month", name: "month", widget: "string" },
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "string" },
+              { label: "Time", name: "time", widget: "string" }
+            ]}
+
+  - name: "gallery"
+    label: "Photo Gallery"
+    files:
+      - name: "gallery"
+        label: "Gallery Photos"
+        file: "content/gallery.json"
+        fields:
+          - { label: "Photos", name: "gallery", widget: "list", fields: [
+              { label: "Caption", name: "caption", widget: "string" },
+              { label: "Image", name: "image", widget: "image", required: false }
+            ]}
