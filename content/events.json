@@ -1,25 +1,18 @@
 {
   "events": [
     {
-      "day": "27",
+      "day": "26",
       "month": "Jul",
       "title": "Sunday Worship Service",
       "description": "Main auditorium — all welcome",
       "time": "9:00 AM"
     },
     {
-      "day": "30",
+      "day": "23",
       "month": "Jul",
       "title": "Midweek Bible Study",
-      "description": "Topic: Building on the Rock, week 4",
+      "description": "Siting At the feet of Jesus ",
       "time": "6:00 PM"
-    },
-    {
-      "day": "02",
-      "month": "Aug",
-      "title": "Youth & Sunday School Meetup",
-      "description": "Games, teaching, and snacks",
-      "time": "4:00 PM"
     }
   ]
 }
