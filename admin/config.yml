@@ -29,7 +29,8 @@ collections:
           - { label: "Sermons", name: "sermons", widget: "list", fields: [
               { label: "Title", name: "title", widget: "string" },
               { label: "Description", name: "description", widget: "string" },
-              { label: "Tag", name: "tag", widget: "string" }
+              { label: "Tag", name: "tag", widget: "string", hint: "e.g. Sunday Service, Bible Study, Sunday School" },
+              { label: "Telegram Link", name: "telegram_link", widget: "string", required: false, hint: "Paste the Telegram link where people can get this sermon's audio" }
             ]}
 
   - name: "events"
@@ -40,11 +41,11 @@ collections:
         file: "content/events.json"
         fields:
           - { label: "Events", name: "events", widget: "list", fields: [
-              { label: "Day", name: "day", widget: "string" },
-              { label: "Month", name: "month", widget: "string" },
+              { label: "Day (e.g. 27)", name: "day", widget: "string" },
+              { label: "Month (e.g. Jul)", name: "month", widget: "string" },
               { label: "Title", name: "title", widget: "string" },
               { label: "Description", name: "description", widget: "string" },
-              { label: "Time", name: "time", widget: "string" }
+              { label: "Time (e.g. 9:00 AM)", name: "time", widget: "string" }
             ]}
 
   - name: "gallery"
