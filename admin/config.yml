@@ -48,6 +48,23 @@ collections:
               { label: "Time (e.g. 9:00 AM)", name: "time", widget: "string" }
             ]}
 
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about"
+        label: "About Content"
+        file: "content/about.json"
+        fields:
+          - { label: "About", name: "about", widget: "object", fields: [
+              { label: "Body text", name: "body", widget: "text" },
+              { label: "Email", name: "email", widget: "string" },
+              { label: "Address", name: "address", widget: "string" },
+              { label: "Sunday Worship time", name: "sunday_worship", widget: "string" },
+              { label: "Sunday School time", name: "sunday_school", widget: "string" },
+              { label: "Bible Study time", name: "bible_study", widget: "string" },
+              { label: "Prayer Meeting time", name: "prayer_meeting", widget: "string" }
+            ]}
+
   - name: "gallery"
     label: "Photo Gallery"
     files:
