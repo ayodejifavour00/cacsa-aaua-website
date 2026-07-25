@@ -65,6 +65,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }).catch(() => {});
   }
 
+  const aboutBody = document.getElementById('aboutBody');
+  if (aboutBody) {
+    fetch('content/about.json').then(r => r.json()).then(data => {
+      const a = data.about || {};
+      if (a.body) aboutBody.textContent = a.body;
+      const email = document.getElementById('aboutEmail');
+      if (email && a.email) { email.textContent = a.email; email.href = 'mailto:' + a.email; }
+      const addr = document.getElementById('aboutAddress');
+      if (addr && a.address) addr.textContent = a.address;
+      const map = { tSunday: a.sunday_worship, tSchool: a.sunday_school, tBible: a.bible_study, tPrayer: a.prayer_meeting };
+      Object.entries(map).forEach(([id, val]) => {
+        const el = document.getElementById(id);
+        if (el && val) el.textContent = val;
+      });
+    }).catch(() => {});
+  }
+
   const bulletinTrack = document.getElementById('bulletinTrack');
   if (bulletinTrack) {
     const items = [
