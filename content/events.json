@@ -1,21 +1,21 @@
 {
   "events": [
     {
-      "day": "SUNDAY",
+      "day": "SUN",
       "month": "SEPTEMBER",
       "title": "Glorious Servicr",
       "description": "Main auditorium — all welcome",
       "time": "9:00 AM (Sunday School starts by 8AM)"
     },
     {
-      "day": "TUESDAY",
+      "day": "TUES",
       "month": "SEPTEMBER",
       "title": "Prayer Meeting",
       "description": "When Zion Prays",
       "time": "5:30pm"
     },
     {
-      "day": "THURSDAY",
+      "day": "THURS",
       "month": "SEPTEMBER",
       "title": "Bible Study",
       "description": "Sitting At The Feet Of Jesus",
