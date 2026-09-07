@@ -1,17 +1,24 @@
 {
   "events": [
     {
-      "day": "26",
-      "month": "Jul",
-      "title": "Sunday Worship Service",
+      "day": "SUNDAY",
+      "month": "SEPTEMBER",
+      "title": "Glorious Servicr",
       "description": "Main auditorium — all welcome",
       "time": "9:00 AM (Sunday School starts by 8AM)"
     },
     {
-      "day": "23",
-      "month": "Jul",
-      "title": "Midweek Bible Study",
-      "description": "Siting At the feet of Jesus ",
+      "day": "TUESDAY",
+      "month": "SEPTEMBER",
+      "title": "Prayer Meeting",
+      "description": "When Zion Prays",
+      "time": "5:30pm"
+    },
+    {
+      "day": "THURSDAY",
+      "month": "SEPTEMBER",
+      "title": "Bible Study",
+      "description": "Sitting At The Feet Of Jesus",
       "time": "5:30pm"
     }
   ]
